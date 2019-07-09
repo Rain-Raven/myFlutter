@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class BottomNavigationBarDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _BottomNavigationBarDemoState();
   }
 }
@@ -18,7 +17,6 @@ class _BottomNavigationBarDemoState extends State<BottomNavigationBarDemo> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return BottomNavigationBar(
       currentIndex: _currentIndex,
       onTap: _onTapHandler,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 class BasicDemo extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Container(
       // color: Colors.grey[100],
       decoration: BoxDecoration(
@@ -69,7 +68,6 @@ class BasicDemo extends StatelessWidget{
 class RichTextDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return RichText(
       text: TextSpan(
         text: "Jero",
@@ -101,7 +99,6 @@ class TextDemo extends StatelessWidget {
   final String _title = "一封情书";
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Text(
       "《$_title》--$_author--你不开心的时候，我陪你，你哭泣的时候，我陪你，你心情很不爽的时候，我陪你，你不想回家的时候，我陪你，无论怎样，我都陪你，只因为你是我最爱的人，你就是我的音乐，你给我带来好听的音符。你是我的全部，你给我生命带来了色彩。我永远爱你！可以跟我在一起吗？",
       textAlign: TextAlign.left,

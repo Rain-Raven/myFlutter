@@ -6,21 +6,34 @@ import 'demo/basic_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/page_view_demo.dart';
 import 'demo/sliver_demo.dart';
+import 'demo/Navictor_demo.dart';
+import 'demo/form_demo.dart';
+import 'demo/material_components_demo.dart';
 
 void main() => runApp(App());
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SliverDemo(),
+    //  home: NavigatorDemo(),
+      initialRoute: "/mtc",
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
+        accentColor: Colors.blue,
       ),
+     
+      routes: {
+        "/about": (context) => Home(),
+        "/root": (context) => NavigatorDemo(),
+        "/": (context) => Home(),
+        "/form": (context) => FormDemo(),
+        "/mtc": (context)=> MaterialComponentsDemo(),
+      },
+     
     );
   }
 }
@@ -28,7 +41,6 @@ class App extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return DefaultTabController(
       length: 4,
       child: Scaffold(

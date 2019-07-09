@@ -4,7 +4,6 @@ import '../model/post.dart';
 class ViewDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return GridPageBuilderDemo();
   }
 }
@@ -18,7 +17,6 @@ class GridPageBuilderDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return GridView.builder(
       padding: EdgeInsets.all(8.0),
       itemCount: posts.length,
@@ -33,7 +31,7 @@ class GridPageBuilderDemo extends StatelessWidget {
 }
 
 class PageViewBuilderDemo extends StatelessWidget {
-  Widget _pageItemBuilder(BuildContext, int index) {
+  Widget _pageItemBuilder(BuildContext context, int index) {
     return Stack(
       children: <Widget>[
         SizedBox.expand(
@@ -59,7 +57,6 @@ class PageViewBuilderDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return PageView.builder(
       itemCount: posts.length,
       itemBuilder: _pageItemBuilder,
@@ -70,7 +67,6 @@ class PageViewBuilderDemo extends StatelessWidget {
 class PageViewDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return PageView(
       onPageChanged: (currentPage) => debugPrint("flutter page:$currentPage"),
       controller: PageController(

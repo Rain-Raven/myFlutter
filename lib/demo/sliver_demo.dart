@@ -4,7 +4,6 @@ import '../model/post.dart';
 class SliverDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
@@ -27,7 +26,6 @@ class SliverDemo extends StatelessWidget {
 class SliverListDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
@@ -82,7 +80,6 @@ class SliverListDemo extends StatelessWidget {
 class SliverGridDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return SliverGrid(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
